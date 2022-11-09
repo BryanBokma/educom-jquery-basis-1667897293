@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>   
+  <head>
+    <link rel="stylesheet" href="JQuery popup.css"/>   
     <script src="js/jquery.js"></script>
     <script>
       $(document).ready( function() {
 
-        $("#content").html("<h1>JQuery says Hi!</h1>")
+        $("#btn").click(function() {
+          $(".window").fadeToggle()
+        }) //end function button
 
-         
-
-      });    
+      }) //end function.ready   
     </script>
   </head>
   <body>
-     <div id="content"></div>
+     <div id="btn" class="button">Click Me!</div>
+     <div class="window">This is the window!</div>
   </body>
 </html>
